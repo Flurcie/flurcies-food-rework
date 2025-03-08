@@ -168,4 +168,8 @@ public class CustomFoodComponents {
             .nutrition(1)
             .saturationModifier(0.1F)
             .build();
+    public static final FoodComponent GLISTERING_MELON_SLICE = new FoodComponent.Builder()
+            .nutrition(1)
+            .saturationModifier(0.1F)
+            .build();
 }

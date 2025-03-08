@@ -276,4 +276,18 @@ public class CustomConsumableComponents {
             .sound(SoundEvents.ENTITY_GENERIC_EAT)
             .consumeParticles(true)
             .build();
+    public static final ConsumableComponent GLISTERING_MELON_SLICE = ConsumableComponent.builder()
+            .consumeSeconds(1.6F)
+            .useAction(UseAction.EAT)
+            .sound(SoundEvents.ENTITY_GENERIC_EAT)
+            .consumeParticles(true)
+            .consumeEffect(
+                    new ApplyEffectsConsumeEffect(
+                            List.of(
+                                    new StatusEffectInstance(StatusEffects.REGENERATION, 100, 1),
+                                    new StatusEffectInstance(StatusEffects.ABSORPTION, 2400, 0)
+                            )
+                    )
+            )
+            .build();
 }

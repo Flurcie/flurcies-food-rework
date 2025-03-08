@@ -3,7 +3,9 @@
 	"package": "flurcie.food.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"FoodItemsMixin"
+		"FoodItemsMixin",
+		"GlisteringMelonMixin",
+		"VeggieMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

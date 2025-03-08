@@ -1,14 +1,14 @@
 {
 	"schemaVersion": 1,
 	"id": "flurciefood",
-	"version": "${version}",
+	"version": "1.0-alpha1",
 	"name": "Flurcie's Food Rework",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Changes Minecraft's food system to incentivise different foods being used.",
 	"authors": [
-		"Me!"
+		"Flurcie"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
+		"homepage": "https://x.com/Flurcie",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",

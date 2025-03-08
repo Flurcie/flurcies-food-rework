@@ -136,16 +136,6 @@ public abstract class FoodItemsMixin {
               .food(CustomFoodComponents.SPIDER_EYE, CustomConsumableComponents.SPIDER_EYE)
               .maxCount(64));
     }
-    if ("carrot".equals(id)) {
-      return Items.register(id, new Item.Settings()
-              .food(CustomFoodComponents.CARROT, CustomConsumableComponents.CARROT)
-              .maxCount(16));
-    }
-    if ("potato".equals(id)) {
-      return Items.register(id, new Item.Settings()
-              .food(CustomFoodComponents.POTATO, CustomConsumableComponents.POTATO)
-              .maxCount(16));
-    }
     if ("baked_potato".equals(id)) {
       return Items.register(id, new Item.Settings()
               .food(CustomFoodComponents.BAKED_POTATO, CustomConsumableComponents.BAKED_POTATO)

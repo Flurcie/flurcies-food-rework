@@ -6,8 +6,7 @@ import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.ConsumableComponents;
 import net.minecraft.component.type.OminousBottleAmplifierComponent;
 import net.minecraft.component.type.SuspiciousStewEffectsComponent;
-import net.minecraft.item.Item;
-import net.minecraft.item.Items;
+import net.minecraft.item.*;
 import net.minecraft.util.Rarity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -15,9 +14,6 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 
 @Mixin(Items.class)
 public abstract class FoodItemsMixin {
-
-  //TODO: Potatoes and Carrots are bugged. Need own mixin? Redirect seems to not work. Troubleshoot.
-
 
   @Redirect(method = "<clinit>",
           at = @At(value = "INVOKE",
@@ -46,14 +42,14 @@ public abstract class FoodItemsMixin {
     if ("golden_apple".equals(id)) {
       return Items.register(id, new Item.Settings()
               .food(CustomFoodComponents.GOLDEN_APPLE, CustomConsumableComponents.GOLDEN_APPLE)
-              .maxCount(16));
+              .maxCount(4));
     }
     if ("enchanted_golden_apple".equals(id)) {
       return Items.register(id, new Item.Settings()
               .rarity(Rarity.RARE)
               .food(CustomFoodComponents.ENCHANTED_GOLDEN_APPLE, CustomConsumableComponents.ENCHANTED_GOLDEN_APPLE)
               .component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
-              .maxCount(16));
+              .maxCount(4));
     }
     if ("mushroom_stew".equals(id)) {
       return Items.register(id, new Item.Settings()

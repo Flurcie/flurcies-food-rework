@@ -19,7 +19,7 @@ public abstract class GlisteringMelonMixin {
         if ("glistering_melon_slice".equals(id)) {
             return Items.register(id, new Item.Settings()
                     .food(CustomFoodComponents.GLISTERING_MELON_SLICE, CustomConsumableComponents.GLISTERING_MELON_SLICE)
-                    .maxCount(16));
+                    .maxCount(4));
         }
         return Items.register(id);
     }

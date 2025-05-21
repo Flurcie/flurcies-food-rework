@@ -4,8 +4,8 @@ import net.minecraft.component.type.FoodComponent;
 
 public class CustomFoodComponents {
     public static final FoodComponent APPLE = new FoodComponent.Builder()
-            .nutrition(20)
-            .saturationModifier(1.3F)
+            .nutrition(4)
+            .saturationModifier(0.3F)
             .build();
     public static final FoodComponent BAKED_POTATO = new FoodComponent.Builder()
             .nutrition(5)

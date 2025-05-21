@@ -5,6 +5,7 @@
 	"mixins": [
 		"FoodItemsMixin",
 		"GlisteringMelonMixin",
+		"HungerManagerMixin",
 		"PotionStackMixin",
 		"VeggieMixin"
 	],

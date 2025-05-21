@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "flurciefood",
-	"version": "1.0-alpha1",
+	"version": "1.0-alpha3",
 	"name": "Flurcie's Food Rework",
 	"description": "Changes Minecraft's food system to incentivise different foods being used.",
 	"authors": [
